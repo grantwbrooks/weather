@@ -1,6 +1,7 @@
 $(document).ready(function() {
-    $('form').submit(function() {
-        // your code here (build up your url)
+    
+    $("#houses img").click(function(){
+        var houseid = $(this).attr("id");
 
         var cityentered = $("#city").val();
         var apikey = "ed0ea140436fc30efff8a1e5fa2e9b79"
@@ -11,8 +12,12 @@ $(document).ready(function() {
             html_string += "<div><p>Temperature: "+res.main.temp+"</p></div>";
             $("#weatherdisplay").html(html_string);
         }, 'json');
+      $("#hdetails").html(html_str);
 
-        // don't forget to return false so the page doesn't refresh
-        return false;
+        }, "json");
+   
     });
+
+
 });
+

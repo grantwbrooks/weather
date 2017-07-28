@@ -4,13 +4,28 @@
     font-family: sans-serif;
 }
 
-#userinput div{
-    display: inline-block;
-    vertical-align: top;
+body{
+    width: 900px;
 }
 
-#weatherdisplay div p{
-    display: inline-block;
-    letter-spacing: 2px;
+#houses{
+    margin: 0 auto;
+    width: 820px;   
+}
 
+#houses img{
+    width: 200px;
+    height: 112.5px;
+}
+
+#hdetails{
+    border: 2px solid darkolivegreen;
+    width: 600px;
+    height: 400px;
+    margin: 40px auto;
+    padding: 50px;
+}
+
+#hdetails p{
+    margin-top: 30px;
 }
